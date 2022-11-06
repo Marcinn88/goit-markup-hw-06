@@ -726,7 +726,6 @@ body {
 }
 .footer-logo-cointainer {
   width: 209px;
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -797,6 +796,7 @@ body {
   background-color: var(--logo-color);
   height: 50px;
   border-radius: 4px;
+  border-color: transparent;
   margin-left: 12px;
   display: flex;
   align-items: center;
@@ -833,6 +833,11 @@ body {
 .modal-input {
   outline: none;
   border: none;
+}
+.modal-fs svg {
+  fill: black;
+  position: absolute;
+  left: 15px;
 }
 .textarea-fs {
   border-radius: 4px;
