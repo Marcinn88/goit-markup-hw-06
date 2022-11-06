@@ -16,6 +16,7 @@
   --team-color: #f5f4fa;
   --line-color: #e5e5e5;
   --ico-color: #afb1b8;
+  --placeholder-color: rgba(117, 117, 117, 0.5);
 }
 .container {
   width: 1200px;
@@ -45,7 +46,7 @@
   margin-right: auto;
   margin-top: 220px;
   border-radius: 4px;
-  padding: 50px;
+  padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   z-index: 3;
@@ -805,4 +806,100 @@ body {
 }
 .icon-send {
   fill: var(--bright-color);
+}
+.modal-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1, 15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--third-color);
+  margin-bottom: 12px;
+}
+
+.modal-fs {
+  display: flex;
+  border-radius: 4px;
+  border: solid 1px #21212128;
+  padding: 5px;
+  margin-bottom: 10px;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  position: relative;
+}
+.modal-input {
+  outline: none;
+  border: none;
+}
+.textarea-fs {
+  border-radius: 4px;
+  border: solid 1px #21212128;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.textarea {
+  width: 100%;
+  resize: none;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+textarea::placeholder {
+  color: var(--placeholder-color);
+}
+.modal-size {
+  height: 40px;
+}
+.textarea-size {
+  height: 120px;
+}
+.modal-label {
+  font-size: 12px;
+  line-height: 1, 16;
+  letter-spacing: 0.01em;
+  color: var(--second-color);
+}
+.modal-checkbox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.modal-checkbox p {
+  font-size: 14px;
+  line-height: 1, 7;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
+.modal-checkbox a {
+  color: var(--logo-color);
+}
+.modal-checkbox input {
+  width: 16px;
+}
+.modal-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-button {
+  background-color: var(--logo-color);
+  color: var(--bright-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 10px;
+  letter-spacing: 0.06em;
+  width: 200px;
+  border-radius: 4px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
 }
