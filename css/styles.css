@@ -830,6 +830,12 @@ body {
   letter-spacing: 0.01em;
   position: relative;
 }
+.textarea-fs:has(.textarea:focus),
+.modal-fs:has(.modal-input:focus),
+.modal-fs:has(.modal-input:focus) svg {
+  border-color: var(--logo-color);
+  fill: var(--logo-color);
+}
 .modal-input {
   outline: none;
   border: none;
